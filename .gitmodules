@@ -1,0 +1,3 @@
+[submodule "lib/KiCad-Schematic-Symbol-Libraries"]
+	path = lib/KiCad-Schematic-Symbol-Libraries
+	url = https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries.git

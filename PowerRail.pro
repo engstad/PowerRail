@@ -1,4 +1,4 @@
-update=Tue 11 Aug 2015 09:51:55 PM PDT
+update=Thu 13 Aug 2015 12:39:41 AM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../lib/camera
+LibDir=../lib/camera;lib/KiCad-Schematic-Symbol-Libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=camera
+LibName31=lib/KiCad-Schematic-Symbol-Libraries/Cypress_PSoC
+LibName32=lib/KiCad-Schematic-Symbol-Libraries/xess
+LibName33=lib/KiCad-Schematic-Symbol-Libraries/xilinx7
