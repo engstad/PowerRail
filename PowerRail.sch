@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:camera
 LIBS:Cypress_PSoC
 LIBS:xess
 LIBS:xilinx7
@@ -38,10 +37,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "ADP5071 PowerRail"
+Date "2015-09-17"
+Rev "0.2"
+Comp "Engstad Design Studio"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -312,8 +311,8 @@ $Comp
 L C C5
 U 1 1 55CAE305
 P 6700 3550
-F 0 "C5" H 6725 3650 50  0000 L CNN
-F 1 "1.0uF" H 6725 3450 50  0000 L CNN
+F 0 "C5" V 6650 3650 50  0000 L CNN
+F 1 "1.0uF" V 6750 3650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6738 3400 30  0001 C CNN
 F 3 "" H 6700 3550 60  0000 C CNN
 F 4 "GRM188R71A105KA61D" H 6700 3550 60  0001 C CNN "Manu"
@@ -325,7 +324,7 @@ L R R6
 U 1 1 55CAE350
 P 6700 3850
 F 0 "R6" V 6780 3850 50  0000 C CNN
-F 1 "1.07M" V 6700 3850 50  0000 C CNN
+F 1 "975K" V 6700 3850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6630 3850 30  0001 C CNN
 F 3 "" H 6700 3850 30  0000 C CNN
 	1    6700 3850
@@ -411,18 +410,18 @@ Wire Wire Line
 Connection ~ 7050 4100
 Connection ~ 7300 4100
 Wire Wire Line
-	4700 3600 4500 3600
+	4700 3600 4100 3600
 Wire Wire Line
-	4500 3600 4500 3550
+	4100 3600 4100 3550
 $Comp
 L GND #PWR010
 U 1 1 55CAEDD2
-P 4500 3550
-F 0 "#PWR010" H 4500 3300 50  0001 C CNN
-F 1 "GND" H 4500 3400 50  0000 C CNN
-F 2 "" H 4500 3550 60  0000 C CNN
-F 3 "" H 4500 3550 60  0000 C CNN
-	1    4500 3550
+P 4100 3550
+F 0 "#PWR010" H 4100 3300 50  0001 C CNN
+F 1 "GND" H 4100 3400 50  0000 C CNN
+F 2 "" H 4100 3550 60  0000 C CNN
+F 3 "" H 4100 3550 60  0000 C CNN
+	1    4100 3550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -461,7 +460,7 @@ L D_Schottky D1
 U 1 1 55CAF689
 P 6800 2750
 F 0 "D1" H 6800 2850 50  0000 C CNN
-F 1 "<40pF@5V" H 6800 2650 50  0000 C CNN
+F 1 "DFLS240" H 6800 2650 50  0000 C CNN
 F 2 "camera:PowerDI_123" H 6800 2750 60  0001 C CNN
 F 3 "" H 6800 2750 60  0000 C CNN
 F 4 "DFLS240" H 6800 2750 60  0001 C CNN "Manu"
@@ -473,7 +472,7 @@ L D_Schottky D2
 U 1 1 55CAFBA2
 P 6800 4100
 F 0 "D2" H 6800 4200 50  0000 C CNN
-F 1 "<40pF@5V" H 6800 4000 50  0000 C CNN
+F 1 "DFLS240" H 6800 4000 50  0000 C CNN
 F 2 "camera:PowerDI_123" H 6800 4100 60  0001 C CNN
 F 3 "" H 6800 4100 60  0000 C CNN
 F 4 "DFLS240" H 6800 4100 60  0001 C CNN "Manu"
@@ -558,4 +557,52 @@ F 3 "" H 5150 4950 60  0000 C CNN
 $EndComp
 Text Label 5650 4950 0    60   ~ 0
 0V
+Text Notes 6150 2200 0    60   ~ 0
+VPOS = VFB1 x (1  + RFT1/RFB1)\n      = 0.8 x (1 + 1.4M/0.1M) [V] = 0.8 x 15 [V] = 12 [V]\n
+Text Notes 4050 6150 0    60   ~ 0
+VNEG = VFB2 - RFT2 / RFB2 x (VREF - VFB2) [VREF=1.6, VREF-VFB2=0.8]\n      = 0.8 - 975/100 x 0.8 [V] = -7.0 [V]\n\n
+Text Label 6050 3550 0    60   ~ 0
+REF
+Text Label 6050 3850 0    60   ~ 0
+FB2
+Text Notes 6050 3700 0    50   ~ 0
+RFB2
+Text Notes 7900 4100 0    60   ~ 0
+= VNEG
+Text Notes 6600 3800 0    50   ~ 0
+RFT2
+Text Notes 1150 2300 0    60   ~ 0
+tSS = 4 ms if open\ntSS = 38.4e-3 − 1.28e−7 × RSS(Ohm), where 50 kOhm ≤ RSS ≤ 268 kOhm.\n
+Text Notes 6500 950  0    60   ~ 0
+SYNC/FREQ = GND  : 1.2 MHz\nSYNC/FREQ = VREG : 2.4 MHz
+Text Notes 700  7250 0    60   ~ 0
+DUTY2 = (|VNEG|+VDIODE2)/(VIN+|VNEG|+VDIODE2), \n     where VDIODE2 is the forward voltage drop over Schottky diode\nI_L2 = I_OUT2 / (1 - DUTY2)\nt_ON2 = DUTY2 / f_SW\n/\I_L2 = VIN x t_ON2 / L2\n\nRipple current max of 30% of maximum dc:\nL2 = VIN x t_ON2 x (1 - DUTY2) / (0.30 x I_OUT2)\n\nEnsure: Peak inductor current [max input curr + 1/2 ind ripple curr] \nis below the rated saturation current of the inductor.\n\nEnsure: Max rated RMS current > max DC input current to regulator\n\nEnsure: L2 > L_min2 = Vin x (0.13/(1-DUTY2) - 0.16) [uH]\n
+Text Notes 4000 6300 0    60   ~ 0
+DUTY2 = (7+0.45)/(5+7+0.45) = 60%
+Text Notes 4100 6450 0    60   ~ 0
+I_L2 = 0.5 / (1-0.6) = 1.25 [A]
+Text Notes 4000 6600 0    60   ~ 0
+t_ON2 = 0.6 / 1.2MHz = 0.5 us
+Text Notes 4000 6750 0    60   ~ 0
+/\I_L2 = 5.0 x 0.5e-6 / 6.6e-6 = 378 [uA]
+Text Notes 4200 6900 0    60   ~ 0
+L2 = 5.0 x 0.5e-6 x (1-0.60) / (0.30 x 0.5) = 6.66 [uH]
+Text Notes 8850 4450 0    50   ~ 0
+DIODE: \nPeak Repetitive Reverse Voltage: 40 [V]\nWorking Peak Reverse Voltage: 40 [V]\nDC Blocking Voltage: 40 [V]\nRMS Reverse Voltage: 28 [V]\nAverage Forward Current: 2.0 [A]\nNon-repetitive peak forward surge current (8.32ms): 50 [A]\nForward voltage: 0.45 [V] @ 2.0 [A]\nLeakage current: 0.1-10 [mA]\nCapacitance: 90 [pF]\n
+Text Notes 8850 3300 0    50   ~ 0
+INDUCTORS: XAL4030 line\nValue (uH)   :  3.3/ 4.7/ 6.8/ 8.2/ 10/ 15\nDCR (mOhm) : 26.0/40.1/67.4/60.8/84.0/109\nSRF (MHz)    :  43/ 36/ 29/ 27/ 24/ 20\nISat (A)      :  5.5/4.5/3.6/4.0/3.0/2.8\nIrms (A)      :  6.6/5.1/3.9/3.4/3.1/2.8\n\n
+Text Notes 4000 7050 0    60   ~ 0
+L2_min = 5.0 x (0.13/(1-0.6) - 0.16) = 0.825 [uH]
+Text Notes 600  1800 0    100  ~ 20
+TODO:\n* BUY\n    - R6 = 975K (1%)\n    - C2, C3 = 47 nF\n    - L2 = 6.8 uH (XAL4030)\n* CHECK DESIGN IN ADISIM (ESP R1 and R2)\n* CONSIDER POST LDO REGULATORS FOR MIN RIPPLE\n* LAYOUT IS TOO SPACY
+Wire Notes Line
+	6300 500  6300 1900
+Wire Notes Line
+	6300 1900 500  1900
+Wire Notes Line
+	3950 5800 3950 7800
+Wire Notes Line
+	700  5800 7750 5800
+Wire Notes Line
+	7750 5800 7750 6550
 $EndSCHEMATC
