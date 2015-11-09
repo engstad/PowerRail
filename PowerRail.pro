@@ -63,4 +63,4 @@ LibName31=camera
 LibName32=lib/KiCad-Schematic-Symbol-Libraries/Cypress_PSoC
 LibName33=lib/KiCad-Schematic-Symbol-Libraries/xess
 LibName34=lib/KiCad-Schematic-Symbol-Libraries/xilinx7
-LibName35=/home/engstad/Electronics/proj/lib/engstad/engstad/engstad
+LibName35=../lib/engstad/engstad/engstad

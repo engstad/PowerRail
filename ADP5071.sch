@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:PowerRail-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,7 +31,6 @@ LIBS:valves
 LIBS:Cypress_PSoC
 LIBS:xess
 LIBS:xilinx7
-LIBS:engstad
 LIBS:PowerRail-cache
 EELAYER 25 0
 EELAYER END

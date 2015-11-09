@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:PowerRail-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,7 +31,6 @@ LIBS:valves
 LIBS:Cypress_PSoC
 LIBS:xess
 LIBS:xilinx7
-LIBS:engstad
 LIBS:PowerRail-cache
 EELAYER 25 0
 EELAYER END
@@ -919,4 +917,6 @@ Text Label 9150 5050 1    60   ~ 0
 SW4
 Text Label 9300 1800 0    60   ~ 0
 SW3
+Text Label 3800 1800 0    60   ~ 0
+DN
 $EndSCHEMATC

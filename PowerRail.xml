@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/engstad/Electronics/proj/PowerRail/PowerRail.sch</source>
+    <source>./proj/PowerRail/PowerRail.sch</source>
     <date>Wed 12 Aug 2015 09:58:00 AM PDT</date>
     <tool>Eeschema 0.201508110901+6083~28~ubuntu15.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -340,7 +340,7 @@
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="camera">
-      <uri>/home/engstad/Electronics/proj/lib/camera/camera.lib</uri>
+      <uri>./proj/lib/camera/camera.lib</uri>
     </library>
   </libraries>
   <nets>
