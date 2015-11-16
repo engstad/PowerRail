@@ -477,7 +477,7 @@ U 1 1 563226D1
 P 2000 2750
 F 0 "P7" H 2000 2900 50  0000 C CNN
 F 1 "PIN" V 2100 2750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 2000 2750 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2000 2750 60  0001 C CNN
 F 3 "" H 2000 2750 60  0000 C CNN
 	1    2000 2750
 	-1   0    0    1   
@@ -488,7 +488,7 @@ U 1 1 563226D8
 P 9800 3300
 F 0 "P8" H 9800 3500 50  0000 C CNN
 F 1 "POUT" V 9900 3300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 9800 3300 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 9800 3300 60  0001 C CNN
 F 3 "" H 9800 3300 60  0000 C CNN
 	1    9800 3300
 	1    0    0    -1  
