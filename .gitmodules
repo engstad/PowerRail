@@ -3,4 +3,5 @@
 	url = https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries.git
 [submodule "lib/engstad"]
 	path = lib/engstad
-	url = file:///home/engstad/Electronics/proj/lib/engstad
+	url = https://engstad-design.com/home/engstad/repo/engstad-kicad-lib.git
+
