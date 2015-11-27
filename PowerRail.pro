@@ -1,4 +1,4 @@
-update=Mon 05 Oct 2015 08:05:09 AM PDT
+update=Thu 26 Nov 2015 05:44:48 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../lib/camera;lib/KiCad-Schematic-Symbol-Libraries
+LibDir=
 [eeschema/libraries]
 LibName1=PowerRail-rescue
 LibName2=power
@@ -59,8 +59,7 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=camera
-LibName32=lib/KiCad-Schematic-Symbol-Libraries/Cypress_PSoC
-LibName33=lib/KiCad-Schematic-Symbol-Libraries/xess
-LibName34=lib/KiCad-Schematic-Symbol-Libraries/xilinx7
-LibName35=/home/engstad/Electronics/proj/lib/engstad/engstad/engstad
+LibName31=lib/KiCad-Schematic-Symbol-Libraries/Cypress_PSoC
+LibName32=lib/KiCad-Schematic-Symbol-Libraries/xess
+LibName33=lib/KiCad-Schematic-Symbol-Libraries/xilinx7
+LibName34=lib/engstad/engstad/engstad
