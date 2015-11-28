@@ -1,0 +1,34 @@
+|--------+--------+-------------+----------------------------------+---------------------+-----------------------|
+| Item # | Des    | MFG         | Component Specs                  | Part Number         |               Package |
+|--------+--------+-------------+----------------------------------+---------------------+-----------------------|
+|      1 | U1     | ADI         | Dual Channel Switching Regulator | ADP5071ACPZ         |         20-Lead LFCSP |
+|      2 | 1L1    | Murata      | 2.2uH, 91mΩ, 1.55Apk             | LQH32PN2R2NN0       | 3.2mm x 2.5mm x 1.6mm |
+|      3 | 1D1    | DiodesInc   | 0.5 A, 40 V                      | B0540W              |                SOD123 |
+|      4 | 1L2    | Murata      | 1uH, 54mΩ, 2.3Apk                | LQH32PN1R0NN0       | 3.2mm x 2.5mm x 1.6mm |
+|      5 | Cin    | Murata      | 10uF, 10V, 2mΩ                   | GRM21BR61A106K      |                  0805 |
+|      6 | 1Cout1 | TDK         | 10µF, 16V, 4.2mΩ                 | C3216X5R1C106M/1.60 |                  1206 |
+|      7 | 1Cout2 | Taiyo Yuden | 4.7µF, 16V, 14mΩ                 | EMK316 BJ475KL-T    |                  1206 |
+|      8 | 1Ren1  | Vishay      | 1% tolerance                     | 56.2 kΩ             |                  0402 |
+|      9 | 1Ren3  | Vishay      | 1% tolerance                     | 18.7 kΩ             |                  0402 |
+|     10 | 1Rf1   | Vishay      | 1% tolerance                     | 66.5 kΩ             |                  0402 |
+|     11 | 1Rf2   | Vishay      | 1% tolerance                     | 4.75 kΩ             |                  0402 |
+|     12 | 1Cc1   | Murata      | 10% tolerance                    | 10 nF, >6V          |                  0402 |
+|     13 | 1Rc1   | Vishay      | 1% tolerance                     | 9.53 kΩ             |                  0402 |
+|     14 | 1Cc0   | Murata      | 10% tolerance                    | 39 pF, >6V          |                  0402 |
+|     15 | 1Rfilt | Vishay      | 1% tolerance                     | 3.83 Ω              |                  0402 |
+|     16 | 2L1    | Murata      | 3.3uH, 110mΩ, 1Apk               | LQH3NPN3R3MM0       |     3mm x 3mm x 1.4mm |
+|     17 | 2D1    | ON Semi     | 0.5 A, 20 V                      | MBR0520LT1G         |                SOD123 |
+|     18 | 2L2    | Murata      | 0.47uH, 36mΩ, 3.4Apk             | LQH32PNR47NN0       | 3.2mm x 2.5mm x 1.6mm |
+|     19 | 2Cout1 | TDK         | 10µF, 10V, 2.7mΩ                 | C3216X5R1A106Kt     |                  1206 |
+|     20 | 2Cout2 | Taiyo Yuden | 10µF, 10V, 7mΩ                   | LMK212 BJ106KG-T    |                  0805 |
+|     21 | 2Ren1  | Vishay      | 1% tolerance                     | 56.2 kΩ             |                  0402 |
+|     22 | 2Ren3  | Vishay      | 1% tolerance                     | 18.7 kΩ             |                  0402 |
+|     23 | 2Rf1   | Vishay      | 1% tolerance                     | 68.1 kΩ             |                  0402 |
+|     24 | 2Rf2   | Vishay      | 1% tolerance                     | 6.98 kΩ             |                  0402 |
+|     25 | 2Cc1   | Murata      | 10% tolerance                    | 27 nF, >6V          |                  0402 |
+|     26 | 2Rc1   | Vishay      | 1% tolerance                     | 5.76 kΩ             |                  0402 |
+|     27 | 2Cc0   | Murata      | 10% tolerance                    | 68 pF, >6V          |                  0402 |
+|     28 | 2Rfilt | Vishay      | 1% tolerance                     | 3.4 Ω               |                  0402 |
+|     29 | Cvref  | Any         | 1uF, 6.3V, X5R                   | Generic             |                  0603 |
+|     30 | Cvreg  | Any         | 1uF, 6.3V, X5R                   | Generic             |                  0603 |
+|--------+--------+-------------+----------------------------------+---------------------+-----------------------|
