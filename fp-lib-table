@@ -1,3 +1,12 @@
 (fp_lib_table
   (lib (name engstad)(type KiCad)(uri lib/engstad/engstad.pretty)(options "")(descr ""))
+  (lib (name IMC-Capacitors)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Capacitors.pretty")(options "")(descr ""))
+  (lib (name IMC-Connectors)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Connectors.pretty")(options "")(descr ""))
+  (lib (name IMC-Diodes)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Diodes.pretty")(options "")(descr ""))
+  (lib (name IMC-Inductors)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Inductors.pretty")(options "")(descr ""))
+  (lib (name IMC-LEDs)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/LEDs.pretty")(options "")(descr ""))
+  (lib (name IMC-Resistors)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Resistors.pretty")(options "")(descr ""))
+  (lib (name IMC-SMD)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/SMD.pretty")(options "")(descr ""))
+  (lib (name IMC-Transistors)(type KiCad)(uri "$(KIPRJMOD)/lib/imciner2/modules/Transistors.pretty")(options "")(descr ""))
+  (lib (name IMC-Footprints)(type Legacy)(uri "$(KIPRJMOD)/lib/imciner2/Footprints.mod")(options "")(descr ""))
 )

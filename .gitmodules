@@ -4,3 +4,6 @@
 [submodule "lib/engstad"]
 	path = lib/engstad
 	url = https://github.com/engstad/engstad-kicad-lib.git
+[submodule "lib/imciner2"]
+	path = lib/imciner2
+	url = https://github.com/imciner2/KiCad-Libraries.git

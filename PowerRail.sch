@@ -33,6 +33,17 @@ LIBS:Cypress_PSoC
 LIBS:xess
 LIBS:xilinx7
 LIBS:engstad
+LIBS:Amplifiers
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RF_OEM_Parts
+LIBS:Sensors
+LIBS:TransistorParts
 LIBS:PowerRail-cache
 EELAYER 25 0
 EELAYER END

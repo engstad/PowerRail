@@ -1,4 +1,4 @@
-update=Thu 26 Nov 2015 05:44:48 AM PST
+update=Sat 28 Nov 2015 05:31:42 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,14 @@ LibName31=lib/KiCad-Schematic-Symbol-Libraries/Cypress_PSoC
 LibName32=lib/KiCad-Schematic-Symbol-Libraries/xess
 LibName33=lib/KiCad-Schematic-Symbol-Libraries/xilinx7
 LibName34=lib/engstad/engstad/engstad
+LibName35=lib/imciner2/symbols/Amplifiers
+LibName36=lib/imciner2/symbols/DataStorage
+LibName37=lib/imciner2/symbols/Diodes
+LibName38=lib/imciner2/symbols/Microprocessors
+LibName39=lib/imciner2/symbols/MiscellaneousDevices
+LibName40=lib/imciner2/symbols/Passives
+LibName41=lib/imciner2/symbols/PMOD
+LibName42=lib/imciner2/symbols/PowerComponents
+LibName43=lib/imciner2/symbols/RF_OEM_Parts
+LibName44=lib/imciner2/symbols/Sensors
+LibName45=lib/imciner2/symbols/TransistorParts
