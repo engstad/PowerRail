@@ -110,7 +110,9 @@ Wire Wire Line
 Wire Wire Line
 	2900 1150 2900 1050
 Wire Wire Line
-	2900 1050 3200 1050
+	2900 1050 3050 1050
+Wire Wire Line
+	3050 1050 3200 1050
 Connection ~ 3050 1050
 Wire Wire Line
 	3200 1050 3200 1150
@@ -137,13 +139,21 @@ F 3 "" H 4050 2000 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 1800 2350 1800
+	1150 1800 1350 1800
 Wire Wire Line
-	2200 1950 2350 1950
+	1350 1800 1650 1800
+Wire Wire Line
+	1650 1800 2350 1800
+Wire Wire Line
+	2200 1950 2300 1950
+Wire Wire Line
+	2300 1950 2350 1950
 Wire Wire Line
 	1900 1950 1650 1950
 Wire Wire Line
-	1650 1800 1650 2150
+	1650 1800 1650 1950
+Wire Wire Line
+	1650 1950 1650 2150
 Connection ~ 1650 1800
 Wire Wire Line
 	2150 2150 2300 2150
@@ -271,13 +281,23 @@ F 3 "" H 3750 1450 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3850 1450 4250 1450
+	3850 1450 4000 1450
 Wire Wire Line
-	4200 2000 4650 2000
+	4000 1450 4250 1450
 Wire Wire Line
-	4250 1750 4250 2200
+	4200 2000 4250 2000
 Wire Wire Line
-	3750 2000 3900 2000
+	4250 2000 4500 2000
+Wire Wire Line
+	4500 2000 4650 2000
+Wire Wire Line
+	4250 1750 4250 2000
+Wire Wire Line
+	4250 2000 4250 2200
+Wire Wire Line
+	3750 2000 3800 2000
+Wire Wire Line
+	3800 2000 3900 2000
 $Comp
 L C_Small C7
 U 1 1 56127591
@@ -434,7 +454,11 @@ $EndComp
 Text Label 7450 5050 2    60   ~ 0
 VIN_2V7_5V5
 Wire Wire Line
-	7450 5050 8000 5050
+	7450 5050 7600 5050
+Wire Wire Line
+	7600 5050 7850 5050
+Wire Wire Line
+	7850 5050 8000 5050
 $Comp
 L C C10
 U 1 1 5612B881
@@ -488,7 +512,13 @@ $EndComp
 Wire Wire Line
 	9150 5050 9200 5050
 Wire Wire Line
-	9400 5050 10300 5050
+	9400 5050 9500 5050
+Wire Wire Line
+	9500 5050 9800 5050
+Wire Wire Line
+	9800 5050 10150 5050
+Wire Wire Line
+	10150 5050 10300 5050
 $Comp
 L R_Small R3
 U 1 1 5612C1B2
@@ -559,11 +589,17 @@ Wire Wire Line
 	9500 5150 9500 5050
 Connection ~ 9500 5050
 Wire Wire Line
-	9500 5350 9500 5450
+	9500 5350 9500 5400
 Wire Wire Line
-	9300 5400 9800 5400
+	9500 5400 9500 5450
 Wire Wire Line
-	9800 5350 9800 5450
+	9300 5400 9500 5400
+Wire Wire Line
+	9500 5400 9800 5400
+Wire Wire Line
+	9800 5350 9800 5400
+Wire Wire Line
+	9800 5400 9800 5450
 Connection ~ 9500 5400
 Connection ~ 9800 5400
 Wire Wire Line
@@ -618,7 +654,13 @@ Wire Wire Line
 Text Notes 7700 1500 0    60   ~ 0
 20V 1.4A @1.6MHz Step-Up\n\nVin: 2.7V-14V\nFF capacitor: Cf = 1 / (2 * PI * R1 * Fz), Fz = 6 kHz.\nSchottky Diode: 20V (e.g. MBR0520 up to 0.5A, or Toshiba CRS08)\nR (FB to VOUT): R1 = R2 * (VOUT/1.23 - 1)\nR (FB to GND):  R2 = 13.3 kOhm (current = 92 uA).\n\nIf ~SHDN~ pin is used, use pull-up to VIN (R: 50k-100k).
 Wire Wire Line
-	7350 2200 7950 2200
+	7350 2200 7550 2200
+Wire Wire Line
+	7550 2200 7700 2200
+Wire Wire Line
+	7700 2200 7850 2200
+Wire Wire Line
+	7850 2200 7950 2200
 Connection ~ 7850 2200
 Wire Wire Line
 	7850 2400 7950 2400
@@ -643,7 +685,9 @@ Wire Wire Line
 Wire Wire Line
 	9450 1800 9450 2200
 Wire Wire Line
-	9300 2200 9550 2200
+	9300 2200 9450 2200
+Wire Wire Line
+	9450 2200 9550 2200
 $Comp
 L D_Schottky D1
 U 1 1 5612E8B5
@@ -697,7 +741,13 @@ Wire Wire Line
 	8600 2700 8600 2800
 Connection ~ 9450 2200
 Wire Wire Line
-	9850 2200 10800 2200
+	9850 2200 9950 2200
+Wire Wire Line
+	9950 2200 10250 2200
+Wire Wire Line
+	10250 2200 10650 2200
+Wire Wire Line
+	10650 2200 10800 2200
 $Comp
 L R_Small R5
 U 1 1 5612EE70
@@ -754,9 +804,13 @@ Wire Wire Line
 	10250 2200 10250 2250
 Connection ~ 10250 2200
 Wire Wire Line
-	9950 2450 9950 2550
+	9950 2450 9950 2500
 Wire Wire Line
-	9450 2500 10250 2500
+	9950 2500 9950 2550
+Wire Wire Line
+	9450 2500 9950 2500
+Wire Wire Line
+	9950 2500 10250 2500
 Wire Wire Line
 	10250 2500 10250 2450
 Wire Wire Line
@@ -918,7 +972,9 @@ SW4
 Text Label 9300 1800 0    60   ~ 0
 SW3
 Wire Wire Line
-	3050 950  3050 1450
+	3050 950  3050 1050
+Wire Wire Line
+	3050 1050 3050 1450
 $Comp
 L LT3487 U?
 U 1 1 56572B7F
@@ -955,14 +1011,22 @@ $EndComp
 Wire Wire Line
 	2950 3750 2950 3600
 Wire Wire Line
-	1750 3600 3000 3600
+	1750 3600 2950 3600
 Wire Wire Line
-	3200 3600 3300 3600
+	2950 3600 3000 3600
 Wire Wire Line
-	3250 3300 3250 3750
+	3200 3600 3250 3600
+Wire Wire Line
+	3250 3600 3300 3600
+Wire Wire Line
+	3250 3300 3250 3600
+Wire Wire Line
+	3250 3600 3250 3750
 Connection ~ 3250 3600
 Wire Wire Line
-	1450 3300 3250 3300
+	1450 3300 2450 3300
+Wire Wire Line
+	2450 3300 3250 3300
 Wire Wire Line
 	3500 3600 3550 3600
 Wire Wire Line
@@ -996,7 +1060,9 @@ F 3 "" H 1750 4450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 4000 1750 4350
+	1750 4000 1750 4300
+Wire Wire Line
+	1750 4300 1750 4350
 $Comp
 L C_Small C?
 U 1 1 56573B33
@@ -1011,12 +1077,12 @@ $EndComp
 $Comp
 L R_Small R?
 U 1 1 56573C0F
-P 2200 4700
-F 0 "R?" H 2230 4720 50  0000 L CNN
-F 1 "324k" H 2230 4660 50  0000 L CNN
-F 2 "" H 2200 4700 60  0000 C CNN
-F 3 "" H 2200 4700 60  0000 C CNN
-	1    2200 4700
+P 2200 4650
+F 0 "R?" H 2230 4670 50  0000 L CNN
+F 1 "324k" H 2230 4610 50  0000 L CNN
+F 2 "" H 2200 4650 60  0000 C CNN
+F 3 "" H 2200 4650 60  0000 C CNN
+	1    2200 4650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1026,8 +1092,10 @@ Wire Wire Line
 Wire Wire Line
 	2400 4600 2500 4600
 Wire Wire Line
-	2400 4700 2300 4700
-Connection ~ 2400 4600
+	2400 4550 2500 4550
+Wire Wire Line
+	2400 4650 2300 4650
+Connection ~ 2400 4550
 Wire Wire Line
 	2100 4500 2000 4500
 Wire Wire Line
@@ -1037,7 +1105,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 4600 1750 4600
 Wire Wire Line
-	1750 4550 1750 4800
+	1750 4550 1750 4600
+Wire Wire Line
+	1750 4600 1750 4700
+Wire Wire Line
+	1750 4700 1750 4800
 Connection ~ 2000 4600
 Wire Wire Line
 	1750 4700 1450 4700
@@ -1084,7 +1156,9 @@ F 3 "" H 3000 5050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 4850 3000 4950
+	3000 4850 3000 4900
+Wire Wire Line
+	3000 4900 3000 4950
 $Comp
 L GND #PWR?
 U 1 1 56574B0C
@@ -1125,7 +1199,11 @@ $EndComp
 Wire Wire Line
 	4000 4300 4200 4300
 Wire Wire Line
-	4000 4050 4900 4050
+	4000 4050 4200 4050
+Wire Wire Line
+	4200 4050 4550 4050
+Wire Wire Line
+	4550 4050 4900 4050
 Wire Wire Line
 	4200 4050 4200 4100
 Connection ~ 4200 4050
@@ -1172,7 +1250,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 4550 4200 4750
 Wire Wire Line
-	4200 4750 5050 4750
+	4200 4750 4900 4750
+Wire Wire Line
+	4900 4750 5050 4750
 Wire Wire Line
 	4900 4750 4900 4350
 Connection ~ 4900 4750
@@ -1180,7 +1260,7 @@ Text Label 1450 4700 2    60   ~ 0
 -8.1V/90mA
 Text Label 1450 3300 2    60   ~ 0
 VIN_3V_12V
-Text Label 2400 4500 0    60   ~ 0
+Text Label 2400 4650 0    60   ~ 0
 FBN
 Text Label 4050 4300 1    60   ~ 0
 FBP
@@ -1197,6 +1277,4 @@ Text Notes 900  4500 0    30   ~ 0
 VNEG = -RN * 0.025 [mA]  \n(40 kOhm : 1 V)
 Text Notes 4850 4900 0    30   ~ 0
 VPOS = 1.23 + RN * 0.025 [mA] \n(40 kOhm : 1 V)
-Wire Wire Line
-	2500 4600 2500 4550
 $EndSCHEMATC
