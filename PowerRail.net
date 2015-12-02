@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/engstad/Electronics/proj/PowerRail/PowerRail.sch)
-    (date "Sat 28 Nov 2015 02:41:49 PM PST")
-    (tool "Eeschema 0.201511251017+6329~38~ubuntu15.04.1-stable")
+    (date "Tue 01 Dec 2015 09:49:46 AM PST")
+    (tool "Eeschema 0.201511300701+6336~38~ubuntu15.04.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "ADP5071 PowerRail")
@@ -564,7 +564,7 @@
       (tstamp 563B4781))
     (comp (ref L17)
       (value 3.3uH/3.3A)
-      (footprint engstad:inductor-smd-50x50)
+      (footprint engstad:inductor-smd-2020-50x50)
       (fields
         (field (name Manufacturer) Murata)
         (field (name Part) LQH5BPB3R3NT0L))
@@ -1318,14 +1318,14 @@
         (pin (num 7) (name ~) (type input))
         (pin (num 8) (name ~) (type input)))))
   (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical regul)
       (uri /usr/share/kicad/library/regul.lib))
     (library (logical engstad)
-      (uri lib/engstad/engstad/engstad.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib)))
+      (uri lib/engstad/engstad/engstad.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref R32) (pin 2))
