@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name Engstad)(type Legacy)(uri "$(ENGSTADLIB)/engstad/engstad.lib")(options "")(descr ""))
-  (lib (name PowerRail-rescue)(type Legacy)(uri ${KIPRJMOD}/PowerRail-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Engstad")(type "Legacy")(uri "$(ENGSTADLIB)/engstad/engstad.lib")(options "")(descr ""))
+  (lib (name "PowerRail-rescue")(type "KiCad")(uri "${KIPRJMOD}/PowerRail-rescue.kicad_sym")(options "")(descr ""))
 )
